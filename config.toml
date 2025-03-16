@@ -14,6 +14,7 @@ theme = "slim"
 title = "Exploring topics in Rust"
 taxonomies = [{ name = "tags", paginate_by = 5, rss = true }]
 minify_html = true
+output_dir = "rust123"
 
 [markdown]
 # Whether to do syntax highlighting
