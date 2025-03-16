@@ -7,9 +7,13 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+# Manual Adds
+generate_feeds = true
+feed_filenames = ["rss.xml"]
 theme = "slim"
 title = "Exploring topics in Rust"
 taxonomies = [{ name = "tags", paginate_by = 5, rss = true }]
+minify_html = true
 
 [markdown]
 # Whether to do syntax highlighting
@@ -20,6 +24,6 @@ highlight_code = true
 # Put all your custom variables here
 # Links to show at the top of the menu
 slim_menu = [
-    { url = "https://www.rust-lang.org/", name = "Rust" },
     { url = "$BASE_URL/tags", name = "Tags" },
+    { url = "$BASE_URL/tags", name = "RSS" },
 ]
