@@ -8,7 +8,7 @@ compile_sass = true
 build_search_index = false
 
 theme = "slim"
-
+title = "Exploring topics in Rust"
 taxonomies = [{ name = "tags", paginate_by = 5, rss = true }]
 
 [markdown]
@@ -18,3 +18,8 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+# Links to show at the top of the menu
+slim_menu = [
+    { url = "https://www.rust-lang.org/", name = "Rust" },
+    { url = "$BASE_URL/tags", name = "Tags" },
+]
